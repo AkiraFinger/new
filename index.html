@@ -1,0 +1,146 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анкета оценки спроса на велотур</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="container">
+        <form action="send_form.php" method="post" enctype="text/plain" class="survey-form">
+            <h1>Анкета</h1>
+            <h2>«Оценка потребительского спроса на туристические услуги»</h2>
+            <p>Анкета является полностью анонимной и предназначена для оценки потребительского спроса на экологический веломаршрут</p>
+            
+            <!-- Вопросы анкеты -->
+            <fieldset>
+                <legend>1. Укажите Ваш пол:</legend>
+                <label><input type="radio" name="gender" value="male"> мужской</label>
+                <label><input type="radio" name="gender" value="female"> женский</label>
+            </fieldset> 
+			<fieldset>
+                <legend>2. Укажите Ваш возраст:</legend>
+                <label><input type="radio" name="Age" value="under 18"> до 18 лет</label>
+                <label><input type="radio" name="Age" value="from 18 to 30"> 18–30 лет</label>
+                <label><input type="radio" name="Age" value="from 30 to 45"> 30–45 лет</label>
+                <label><input type="radio" name="Age" value="from 45 to 55"> 45–55 лет</label>
+                <label><input type="radio" name="Age" value="more than 55"> 55 лет и старше</label>
+            </fieldset>
+            <fieldset>
+                <legend>3. Род деятельности:</legend>
+                <label><input type="radio" name="type of activity" value="student"> учащийся, студент</label>
+                <label><input type="radio" name="type of activity" value="worker"> рабочий</label>
+                <label><input type="radio" name="type of activity" value="retiree"> пенсионер</label>
+            </fieldset>
+            <fieldset>
+                <legend>4. Как Вы оцениваете свой доход?</legend>
+                <label><input type="radio" name="income" value="low"> низкий (до 800 бел. руб.)</label>
+                <label><input type="radio" name="income" value="average"> средний (800–1600 бел. руб.)</label>
+                <label><input type="radio" name="income" value="high"> высокий (1600 бел. руб.и более)</label>
+            </fieldset>
+            <fieldset>
+                <legend>5. Выберите вид гражданства:</legend>
+                <label><input type="radio" name="citizenship" value="The Republic of Belarus"> гражданин РБ</label>
+                <label><input type="radio" name="citizenship" value="a stateless person"> лицо без гражданства</label>
+                <label><input type="radio" name="citizenship" value="a foreign citizen"> иностранный гражданин</label>
+            </fieldset>
+            <fieldset>
+                <legend>6. Как часто Вы путешествуете?</legend>
+                <label><input type="radio" name="Travel frequency" value="once a year"> один раз в год</label>
+                <label><input type="radio" name="Travel frequency" value="several times a year"> несколько раз в год</label>
+                <label><input type="radio" name="Travel frequency" value="every few years"> раз в несколько лет</label>
+                <label><input type="radio" name="Travel frequency" value="Not once"> не путешествую</label>
+            </fieldset>
+            <fieldset>
+                <legend>7. Какова средняя продолжительность Вашего отдыха/путешествия?</legend>
+                <label><input type="radio" name="The average length of rest" value="less than 7 days"> менее 7 дней</label>
+                <label><input type="radio" name="The average length of rest" value="7 days"> 7 дней</label>
+                <label><input type="radio" name="The average length of rest" value="from 7 to 14 days"> 7–14 дней</label>
+                <label><input type="radio" name="The average length of rest" value="from 14 to 21 days"> 14–21 день</label>
+                <label><input type="radio" name="The average length of rest" value="more than 21 days"> более 21 дней</label>
+            </fieldset>
+            <fieldset>
+                <legend>8. В какой период времни Вы путешествуете чаще?:</legend>
+                <label><input type="radio" name="season of the year" value="winter"> зима</label>
+                <label><input type="radio" name="season of the year" value="spring"> весна</label>
+                <label><input type="radio" name="season of the year" value="summer"> лето</label>
+                <label><input type="radio" name="season of the year" value="autumn"> осень</label>
+            </fieldset>
+            <fieldset>
+                <legend>9. Какой вид отдыха Вы предпочитаете?</legend>
+                <label><input type="radio" name="type of recreation" value="active leisure"> активный</label>
+                <label><input type="radio" name="type of recreation" value="passive rest"> пассивный</label>
+            </fieldset>
+            <fieldset>
+                <legend>10. Какой вид туризма Вы предпочитаете?</legend>
+                <label><input type="radio" name="type of Tourism" value="domestic tourism"> внутренний</label>
+                <label><input type="radio" name="type of Tourism" value="foreign tourism"> зарубежный</label>
+            </fieldset>
+            <fieldset>
+                <legend>11. Любите ли Вы отдых на природе?</legend>
+                <label><input type="radio" name="outdoor recreation" value="Yes, I love outdoor recreation"> да</label>
+                <label><input type="radio" name="outdoor recreation" value="No, I don't like outdoor recreation"> нет</label>
+            </fieldset>
+            <fieldset>
+                <legend>12. Укажите степень Вашей физической подготовки:</legend>
+                <label><input type="radio" name="degree of physical fitness" value="low degree of physical fitness"> низкая</label>
+                <label><input type="radio" name="degree of physical fitness" value="average degree of physical fitness"> средняя</label>
+                <label><input type="radio" name="degree of physical fitness" value="high degree of physical fitness"> высокая</label>
+            </fieldset>
+            <fieldset>
+                <legend>13. Как Вы относитесь к познавательному туризму?</legend>
+                <label><input type="radio" name="attitude to educational tourism" value="a positive attitude"> положительно</label>
+                <label><input type="radio" name="attitude to educational tourism" value="a neutral attitude"> нейтрально</label>
+                <label><input type="radio" name="attitude to educational tourism" value="not interested"> не интересует</label>
+            </fieldset>
+            <fieldset>
+                <legend>14. Знакомы ли Вы с путешествиями по экологическим веломаршрутам?</legend>
+                <label><input type="radio" name="Awareness" value="Yes, I am familiar with ecological cycling"> да</label>
+                <label><input type="radio" name="Awareness" value="No, I am not familiar with ecological cycling"> нет</label>
+                <label><input type="radio" name="Awareness" value="I find it difficult to answer the question about awareness"> затрудняюсь ответить</label>
+            </fieldset>
+            <fieldset>
+                <legend>15. Привлекает ли Вас данный вид туризма?</legend>
+                <label><input type="radio" name="The attractiveness of this type of tourism" value="Yes, I am attracted to this type of tourism"> привлекает</label>
+                <label><input type="radio" name="The attractiveness of this type of tourism" value="No, I'm not attracted to this kind of tourism"> не привлекает</label>
+            </fieldset>
+            <fieldset>
+                <legend>16. Участвовали ли Вы в турах по экологическим веломаршрутам?</legend>
+                <label><input type="radio" name="Participation in cycling" value="Yes, I participated in cycling"> да</label>
+                <label><input type="radio" name="Participation in cycling" value="No, I did not participate in cycling"> нет</label>
+            </fieldset>
+            <fieldset>
+                <legend>17. Какую продолжительность туров Вы предпочитаете?</legend>
+                <label><input type="radio" name="duration of the tour" value="one-day tour"> однодневные</label>
+                <label><input type="radio" name="duration of the tour" value="two-day tour"> двухдневные</label>
+                <label><input type="radio" name="duration of the tour" value="multi-day tour"> более двух дней</label>
+            </fieldset>
+            <fieldset>
+                <legend>18. Вам предложили принять участие в туре выходного дня по экологическому веломаршруту «Просторы Климовщины», Вы бы согласились?</legend>
+                <label><input type="radio" name="offer to participate in the tour" value="Yes, I want to participate"> да</label>
+                <label><input type="radio" name="offer to participate in the tour" value="No, I don't want to participate"> нет</label>
+            </fieldset>
+            <fieldset>
+                <legend>19. Какую сумму денег Вы готовы потратить на данный вид отдыха?</legend>
+                <label><input type="radio" name="the amount of money" value="up to 35 rubles"> до 35 бел. руб.</label>
+                <label><input type="radio" name="the amount of money" value="from 35 to 45 rubles"> 35–45 бел. руб.</label>
+                <label><input type="radio" name="the amount of money" value="from 45 to 55 rubles"> 45–55 бел. руб.</label>
+                <label><input type="radio" name="the amount of money" value="from 55 rubles"> больше 55 бел. руб.</label>
+            </fieldset>
+            <fieldset>
+                <legend>20. Из каких источников Вы преимущественно узнаёте о рекламных предложениях?</legend>
+                <label><input type="radio" name="advertisement" value="TV"> Телевидение, радио</label>
+                <label><input type="radio" name="advertisement" value="newspapers"> Газеты, журналы</label>
+                <label><input type="radio" name="advertisement" value="advertising in transport"> Реклама в транспорте</label>
+                <label><input type="radio" name="advertisement" value="exhibitions"> Специализированные выставки</label>
+                <label><input type="radio" name="advertisement" value="Internet and social networks"> Интернет и социальные сети</label>
+                <label><input type="radio" name="advertisement" value="street advertising"> Уличная реклама</label>
+                <label><input type="radio" name="advertisement" value="flyers and advertisements"> Раздаточный материал (листовки, рекламки и т.п.)</label>
+            </fieldset>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
